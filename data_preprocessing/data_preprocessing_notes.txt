@@ -1,0 +1,54 @@
+Data Preprocessing's common steps for Data Mining:
+    - Data Cleaning -> identifying and removing missing, inconsistent, or irrelevant data.
+                       (removing duplicate records, filling in missing values, and handling outliers.)
+    - Data integration -> combining data from multiple sources, such as databases, spreadsheets, and text files.
+                          (create a single, consistent view of the data.)
+    - Data transformation -> converting the data into a format that is more suitable for the data mining task.
+                             (normalizing numerical data, creating dummy variables, and encoding categorical data.)
+    - Data reduction -> feature selection (selecting a subset of the variables)
+                        or feature extraction (extracting new variables from the data).
+    - Data discretization -> convert continuous numerical data into categorical data,
+                             which can be used for decision tree and other categorical data mining techniques.
+
+########################################################################################################################
+
+Data Cleaning:
+    - Missing Data
+        - Ignore/Delete records or tuples
+        - Fill the missing values.
+    - Noisy Data
+        - Binning Method (Smoothing by replacing a segment of data (requirement -> data should be sorted here))
+        - Regression (a mathematical equation is found to fit into the data helps to smooth out the noise.)
+        - Clustering (Outliers fall outside clusters)
+
+########################################################################################################################
+
+Data Transformation:
+    - Normalization
+        (Data values in range -1 to 1 or any other ranges)
+
+    - Attribute Selection
+        (loan_tenure attribute can be created from loan_start and loan_end attributes)
+
+    - Discretization
+        (percentage attribute of students can be discretize to grades attribute)
+
+    - Concept Hierarchy Generation
+        (city attribute can be converted to country attribute)
+
+########################################################################################################################
+
+Data Reduction:
+    - Data Cube Aggregation -> (Monthly to yearly sales)
+    - Attribute Subset Selection -> Wrappers and filtering
+            (Null hypothesis or p-value explanation -> https://www.simplypsychology.org/p-value.html
+             Video tutorial for same -> https://www.youtube.com/watch?v=KLnGOL_AUgA)
+             Made some written notes please follow that
+             For ANOVA formulae refer -> https://www.cuemath.com/anova-formula/
+             For chi-square formulae refer -> https://www.simplypsychology.org/chi-square.html
+    - Dimensionality Reduction (Encoding Data -> Wavelet transforms, PCA)
+    - Numerosity Reduction (store model of data instead of whole data)(Eg: Store Cluster centers instead of entire data)
+
+
+For more better understanding refer to -> https://www.youtube.com/watch?v=NAL_3fuPfQQ
+and -> https://www.geeksforgeeks.org/data-preprocessing-in-data-mining/
